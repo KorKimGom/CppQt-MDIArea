@@ -1,82 +1,124 @@
-# This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
-
+# General temporary and backup files
 *~
 *.autosave
-*.a
-*.core
-*.moc
-*.o
-*.obj
 *.orig
 *.rej
-*.so
-*.so.*
-*_pch.h.cpp
-*_resource.rc
-*.qm
 .#*
 *.*#
+*.bak
+*.swp
+*.swo
+
+# Compiled object and binary files
+*.a
+*.o
+*.obj
+*.so
+*.so.*
+*.dll
+*.exe
+*.lib
+*.lo
+*.la
+*.out
+*.idb
+*.pdb
+*.ilk
+
+# Debug, release, and cache files
+*.debug
+*.symbols
+*.stackdump
+*.core
 core
 !core/
-tags
-.DS_Store
-.directory
-*.debug
-Makefile*
-*.prl
-*.app
+
+# C++ precompiled headers
+*_pch.h.cpp
+*.gch
+*.pch
+
+# Qt generated files
+*.moc
+*.qrc
+*.qm
+*.res
+*.rc
 moc_*.cpp
 ui_*.h
 qrc_*.cpp
-Thumbs.db
-*.res
-*.rc
-/.qmake.cache
-/.qmake.stash
 
-# qtcreator generated files
+# Qt Creator / QMake specific
 *.pro.user*
+*.pro.user
 *.qbs.user*
+*.qbs.user
+*.pro.user.*
+*.qbs.user.*
 CMakeLists.txt.user*
+.qmake.cache
+.qmake.stash
+*.prl
 
-# xemacs temporary files
-*.flc
+# Build directories (common naming)
+build*/
+bin/
+lib/
+out/
+debug/
+release/
 
-# Vim temporary files
-.*.swp
-
-# Visual Studio generated files
-*.ib_pdb_index
-*.idb
-*.ilk
-*.pdb
-*.sln
-*.suo
-*.vcproj
-*vcproj.*.*.user
-*.ncb
-*.sdf
-*.opensdf
-*.vcxproj
-*vcxproj.*
-
-# MinGW generated files
-*.Debug
-*.Release
-
-# Python byte code
-*.pyc
-
-# Binaries
-# --------
-*.dll
-*.exe
-
-# Directories with generated files
+# moc, uic, rcc build folders
 .moc/
+.uic/
+.rcc/
 .obj/
 .pch/
-.rcc/
-.uic/
-/build*/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+*.lnk
+
+# IDE specific
+# Visual Studio
+*.sln
+*.vcxproj
+*vcxproj.*
+*.vcproj
+*vcproj.*
+*.suo
+*.ncb
+*.user
+*.opensdf
+*.sdf
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcworkspace
+*.xcodeproj
+
+# JetBrains CLion
+.idea/
+cmake-build-*/
+
+# Python cache (if scripting involved)
+*.pyc
+__pycache__/
+
+# Tags / index files
+tags
+TAGS
+
+# System files
+.directory
+
+# Logs
+*.log
