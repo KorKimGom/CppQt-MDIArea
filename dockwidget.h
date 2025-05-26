@@ -7,7 +7,6 @@
 #include <QTextEdit>
 #include <QVBoxLayout>
 
-#include "dockwidget.h"
 
 namespace Ui { class DockWidget; }
 
